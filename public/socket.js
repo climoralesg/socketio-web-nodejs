@@ -33,6 +33,6 @@ socket.on('chat:message',function(data){
     output.innerHTML += `<p> <strong>${data.userName}</strong>:${data.message}</p>`
 });
 
-socket.on('chat:typing',function(data){
+socket.on('chat:escribiendo',function(data){
     actions.innerHTML=`<p><em>${data} is typing</em></p>`
 })

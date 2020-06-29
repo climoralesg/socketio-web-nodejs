@@ -32,8 +32,8 @@ io.on('connection',(socket)=>{
         //console.log(data);
     });
 
-    socket.on('chat:typing',(data)=>{
-        socket.broadcast.emit('chat:typing',data) // emite a todos excepto a mi interfaz 
+    socket.on('chat:escribiendo',(data)=>{
+        socket.broadcast.emit('chat:escribiendo',data) // emite a todos excepto a mi interfaz 
         console.log(data);
     })
 });
